@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled HR Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .styled-hr {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, #00f, #fff, #00f);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="w-full max-w-lg">
+        <p class="text-center mb-4">Content above the line</p>
+        <hr class="styled-hr">
+        <p class="text-center mt-4">Content below the line</p>
+    </div>
+</body>
+</html>
