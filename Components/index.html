@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../resources/imgs/new.ico">
+    <link href="../tailwind/output.css" rel="stylesheet">
+</head> 
+<body  >    
+    <nav class="mx-0 sticky top-0 size-auto flex items-center justify-between lg:mx-auto">
+        <div class=" size-10 text-4xl font-protest">Abhi</div> 
+    <div class=" hidden lg:words  lg:flex lg:gap-8 lg:px-4"><a href="#content1">About</a><a href="#content2">Skill</a><a href="#content3">Education</a><a href="#content4">Projects</a><a href="#footar">Contacts</a></div>   
+    <div class="lg:hidden">
+        <button id="menu-btn" class=" focus:outline-none">
+            <!-- Horizontal Hamburger Icon (Default) -->
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+            <!-- Vertical Hamburger Icon (Hidden Initially) -->
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+
+<!-- Mobile Menu (Hidden by Default) -->
+<div id="mobile-menu" class="hidden  mt-4 words">
+    <a href="#content1" class="block py-1 px-4 text-blue-400 text-right">About</a>
+    <a href="#content2" class="block py-1 px-4 text-blue-400 text-right">Skill</a>
+    <a href="#content3" class="block py-1 px-4 text-blue-400 text-right">Education</a>
+    <a href="#content4" class="block py-1 px-4 text-blue-400 text-right">Projects</a>
+    <a href="#content5" class="block py-1 px-4 text-blue-400 text-right">Contact</a>
+</div></nav>
+</div>
+<section class="content" id="content1" >
+ 
+<div><h6 class="text-4xl sm:text-2xl md:text-3xl text-center tittle">About</h6>
+<p class="text-2xl leading-10 sm:text-xl lg:text-2xl" >My name is Abhishek Yadav and I am an aspiring web developer and i would like to bring my skills to the table and contribute to amazing projects.I have good knowledge of Html, css and javascript. I am currently learning react as well.I am familiar with Linux and Aws also.</p>
+</div>
+
+</section>
+<section class=" content flex " id="content2">
+<div class="w-full"><h1 class="text-4xl sm:text-2xl md:text-3xl text-center tittle leading-10 ">Skills</h1><div>
+<br>
+<div class=" w-9/12 mx-auto">
+<div class="text-2xl  sm:text-xs sm:mt-0  lg:text-xl lgd:mt-2 xl:text-2xl xl:mt-4 "><label for="html1">HTML</label> </div><progress class="skill pbar-box" value="0" max="100"></progress>
+
+<div class="text-2xl  sm:text-xs sm:mt-0 lg:text-xl lgd:mt-2 xl:text-2xl xl:mt-4"><label for="css">CSS</label></div> <progress class="skill pbar-box" value="0" max="100"></progress>
+<div class="text-2xl  sm:text-xs sm:mt-0  lg:text-xl lgd:mt-2 xl:text-2xl xl:mt-4"><label for="js">JS</label> </div>   <progress class="skill pbar-box" value="0" max="100"></progress>
+<div class="text-2xl  sm:text-xs sm:mt-0 lg:text-xl lgd:mt-2 xl:text-2xl xl:mt-4 " ><label for="linux">LINUX</label></div><progress class="skill pbar-box" value="0" max="100"></progress>
+
+<div class="text-2xl  sm:text-xs sm:mt-0  lg:text-xl lgd:mt-2 xl:text-2xl xl:mt-4 "><label for="aws">AWS</label></div> <progress class="skill pbar-box" value="0" max="100"></progress>
+
+<div class="text-2xl  sm:text-xs sm:mt-0  lg:text-xl lgd:mt-2 xl:text-2xl xl:mt-4 "><label for="mongo">MONGO DB</label> </div><progress class="skill pbar-box" value="0" max="100"></progress>
+
+</div>
+
+
+</section>
+<section class=" content" id="content3">
+   <h6 class="text-4xl sm:text-2xl md:text-3xl text-center tittle ">Education</h6> 
+   <div class=" sm:flex justify-around sm:overflow-auto size-auto "><section class="small-box pt-8 sm:sbox">Saraswati Vidyalaya <br> <br> 10th Standard - SSC <br><br>2009-2019 </section><section class="small-box pt-8 sm:sbox">Swami Ramkrishna Paramhans College <br> <br>12th Standard -HSC<br> <br>2019-2021</section><section class="small-box pt-8 sm:sbox">Vidayalankar School of Information Technology <br> <br> Bachelor's of Science In I.T. <br> <br> 2021-2024</section>
+</div>
+</section>
+<section class=" content" id="content4">
+    <h6 class="text-4xl sm:text-2xl md:text-3xl text-center tittle ">Projects</h6> 
+    <div class="   sm:flex justify-around sm:overflow-auto  size-auto"><section class="small-box sm:sbox " > Complaint Management System<br><br> I have created and web application and mobile app for user to streamline complaints and make the complaint filing task hassle free <br>  <br>project link </section><section class="small-box sm:sbox">Project 2 <br>description <br> project link</section></div>
+
+
+</section>
+<hr class="my-2 styled-hr">
+<section id="footar">
+   
+<div class="flex justify-around pb-6 "> <span class="text-aliceblue"> <a href="tel:+7718069099" target="_blank"><img class="logos" src="./../resources/imgs/phone-50.png" alt="phone"></a> </span><span><a href="https://www.linkedin.com/in/abhishek-yadav-36893223b/"target="_blank"><img class="logos" src="./../resources/imgs/linkedin-50.png" alt="linkedIn"></a></span><span><a href="https://github.com/ay46263" target="_blank"><img class="logos" src="./../resources/imgs/github-50.png" alt="github"></a></span><span><a href="mailto:ay46263@gmail.com" target="_blank"><img class="logos" src="./../resources/imgs/gmail-50.png" alt="Mail"></a></span> </div>
+
+
+</div></section>    
+<script src="./index.js"></script>
+</body>
+</html>

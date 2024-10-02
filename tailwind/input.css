@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: rgba(70, 193, 249, 0.845);
+  
+}
+body{
+  background: -moz-linear-gradient(left, var(--secondary) 10%, var(--primary) 55%, var(--tertiary) 100%);
+background: -webkit-linear-gradient(left, var(--secondary) 10%, var(--primary) 55%, var(--tertiary) 100%);
+background: linear-gradient(to right, var(--secondary) 10%, var(--primary) 55%, var(--tertiary) 100%);
+
+}
+:root {
+    --primary: #0E162A;
+    --secondary: #1c3454;
+    --tertiary:#0E162A;
+  }
+ nav{
+  background-color: rgba(4, 38, 70, 0.87); /* Blue color with 50% opacity */
+} 
+
+div > a{
+color:rgba(26, 87, 115, 0.865);
+&:hover{
+    color:#00b4d8;
+}
+}
+/* .bord {
+    border: 0.1em dotted var(--secondary); /* Using em units for a more scalable border*/
+  /*  border-radius: 10% 20% 20% 10%; /* Using percentages for a responsive border-radius }*/
+ .content{
+    height: 99vh;
+    width: auto;
+    background: var(--secondary);
+    margin:3% 15%;
+    padding:auto;
+
+background: -moz-linear-gradient(left, var(--secondary) 0%, var(--primary) 55%, var(--tertiary) 100%);
+background: -webkit-linear-gradient(left, var(--secondary) 0%, var(--primary) 55%, var(--tertiary) 100%);
+background: linear-gradient(to right, var(--secondary) 0%, var(--primary) 55%, var(--tertiary) 100%);
+border: 0.25rem #0e055e solid;
+transition:all 0.5s ease-in-out ;
+} 
+
+.content.visible {
+    
+        margin:3% 9%;
+        border: 0.25rem var(--secondary) solid;
+  }
+  
+  nav{
+    position: sticky;
+  }
+  
+  .small-box{
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    min-height: 18rem;
+    max-height: 100%;
+    font-size: 1rem;
+    line-height:normal;
+    padding: 0%;
+    overflow-x:auto;
+scroll-behavior: smooth;
+    color: rgb(8, 64, 112);
+    align-items: center;
+    text-align: center;
+    background: #1B3353;
+    background: -moz-linear-gradient(-45deg, #1B3353 0%, #315C96 0%, #1F96A3 100%);
+    background: -webkit-linear-gradient(-45deg, #1B3353 0%, #315C96 0%, #1F96A3 100%);
+    background: linear-gradient(135deg, #1B3353 0%, #315C96 0%, #1F96A3 100%);
+border-radius: 10%; 
+  }
+  .tittle{
+    padding-bottom:2rem;
+  }
+ 
+  .logos:hover{
+font-size: large;
+border-radius:10%;
+border: 0.05rem var(--secondary) solid;
+box-shadow: 10px 10px 5px 0px var(--secondary);
+
+  }
+
+  progress {
+    width: 100%;
+    height: 1rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    transition: width 1s ease; /* Smooth transition of width */
+  }
+  progress::-webkit-progress-bar {
+    background-color: var(--secondary); /* Tailwind's gray-200 */
+    border-radius: 0.5rem; /* Rounded corners for Webkit */
+  }
+  progress::-webkit-progress-value {
+    background-color: #00b4d8; /* Tailwind's blue-500 */
+    border-radius: 0.5rem; /* Rounded corners for Webkit */
+  }
+  progress::-moz-progress-bar {
+    background-color: #00b4d8; /* Tailwind's blue-500 */
+    border-radius: 0.5rem; /* Rounded corners for Firefox */
+  }
+  
+  
+  .styled-hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right,#1C6EA4,var(--secondary),#1C6EA4);
+    box-shadow: 0 1px 2px black;
+}
+
+@font-face {
+  font-family: 'Protest Guerrilla';
+  src: url('./ProtestGuerrilla-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Base styles */
+/* Styles for screens with a max-width of 400px */
+@media only screen and (min-width:310px) {
+
+  .content{
+    height: 60vh;
+    margin: 0% 5%;
+
+  }
+  .content.visible{
+    margin: 0%;
+      }  
+
+}
+
