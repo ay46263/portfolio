@@ -22,30 +22,24 @@ document.addEventListener('scroll', function() {
     });
   });
 // Function to refresh progress value when it comes into or leaves the viewport
-function refreshProgress(entries, observer) {
+function refreshProgress(entries) {
   entries.forEach(entry => {
-      const progressBars = document.getElementsByClassName('skill');
-
+      const progressBars = document.getElementsByClassName('skill')
       if (entry.isIntersecting) {
         function smooth(num, targetValue) {
           let currentValue = 0;
-          const progressBar = progressBars[num];
-        
+          const progressBar = progressBars[num];        
           function increment() {
               if (currentValue < targetValue) {
                   currentValue++;
-                  console.log(currentValue + targetValue)
                   progressBar.setAttribute('value', currentValue);
                   setTimeout(increment, 10); // Repeat every 10 milliseconds
               }
           }
-        
           increment(); // Start the increment process
         }
-        
-            smooth(0,70); smooth(1,50); smooth(2,62); smooth(3,35); smooth(4,20); smooth(5,20);   
-          
-      } else {
+         smooth(0,70); smooth(1,50); smooth(2,62); smooth(3,35); smooth(4,20); smooth(5,20);   
+        } else {
           // Reset the progress bar values to 0 when the element leaves the viewport
           for (let i = 0; i < progressBars.length; i++) {
               progressBars[i].setAttribute('value', 0);
@@ -54,13 +48,25 @@ function refreshProgress(entries, observer) {
   });
 }
 
-
 // Create a new IntersectionObserver instance
 const observer = new IntersectionObserver(refreshProgress, {
   root: null, // Use the viewport as the root
   threshold: 0.2 // Trigger when 20% of the element is visible
 });
+const elementsToObserve = document.querySelectorAll('.skill');
+elementsToObserve.forEach(element => observer.observe(element));
 
-// Target the progress bar container for observation
-const progressElement = document.querySelector('.pbar-box');
-observer.observe(progressElement);
+      // Toggle mobile menu
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuIconOpen = document.getElementById('menu-icon-open');
+      const menuIconClose = document.getElementById('menu-icon-close');
+
+      menuBtn.addEventListener('click', () => {
+          // Toggle the mobile menu visibility
+          mobileMenu.classList.toggle('hidden');
+
+          // Toggle the hamburger icons
+          menuIconOpen.classList.toggle('hidden');
+          menuIconClose.classList.toggle('hidden');
+      });
